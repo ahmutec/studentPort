@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awolia School - Student Portal </title>
+  <style>
+General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+  text-align: center;
+  background-color: deepskyblue;
+  transition: background-color 0.3s ease;
+}
+p{
+  border: 0;
+  border-radius: 5px;
+  background-attachment: fixed;
+  text-wrap: true;
+  font-weight:bold;
+ color: rgb(242, 241, 241);  
+
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient( #32a852, #1f7d40);
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s ease-out;
+  transition: transform 0.4s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 2s ease-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #27ae60;
+  color: white;
+  margin-right: 1rem;
+}
+
+.btn-secondary {
+  background: white;
+  color: #27ae60;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+section .lbl{
+  background: rgb(96, 7, 229);
+  color: #f0eef3;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 0px;
+  width: 15%;
+  display: inline-block;
+  
+}
+.section #G-10 {
+  background-color: aqua;
+}
+
+.lable:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(242, 4, 4, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Section */
+.section {
+  margin: 3rem 0;
+  padding: 3rem 0;
+
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
+
+}
+
+.section:hover {
+  transform: scale(1.05); /* Slightly increase the size of the section */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background: #a30a0a; /* Light background change on hover */
+  border: 2px solid #27ae60; /* Add a border effect on hover */
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #27ae60;
+  animation: fadeIn 1s ease-out;
+  transition: color 0.3s ease;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+.section btn-lbl {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+.section button {
+  background: linear-gradient(120deg, #32a852, #1f7d40);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s ease;
+}
+
+.section button:hover {
+  background: linear-gradient(120deg, #01b0f5, #dce405);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background: #1f7d40;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+footer p {
+  font-size: 0.9rem;
+  transition: font-size 0.3s ease;
+}
+
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to Awolia School- Student Portal</h1>
+      <p>Empowering Education, Inspiring Futures</p>
+      <a href="#G-10" class="btn-primary" style= "color:black;"> G-10 IT</a>
+      <a href="#G-11" class="btn-primary"  style="background-color: yellow; color: black;"> G-11 IT</a>
+      <a href="#wd" class="btn-secondary"  style="background-color: rgb(255, 0, 0); color: black;">WEB DESIGN</a>
+     
+
+    </div>
+  </header>
+  <p style="border: 2px red; border-radius: 10px;">Access your class room Assessment (Quize, assignments, test-1, mid-exam, test-2, class activity and fina-exam) + Your Total result from 100%.</p>
+
+
+  <section id="G-10" class="section" style="background-color: rgb(94, 244, 194);">
+    <div class="container">
+      <label class="lbl"><h3>GRADE 10</h3></label>
+      <h2 style="color: black;">INFORMATION TECHNOLOGY</h2>
+      <button class="btn-primary">Section A</button>
+      <button class="btn-primary">Section B</button>
+      <button class="btn-primary">Section C</button>
+      <button class="btn-primary">Section D</button>
+  </section>
+  <section id="G-11" class="section"  style="background-color: blanchedalmond;">
+    <div class="container">
+      <label class="lbl"><h3>GRADE 11</h3></label>
+      <h2 style="color: black;">INFORMATION TECHNOLOGY</h2>
+      <button class="btn-primary">Section A</button>
+      <button class="btn-primary">Section B</button>
+      <button class="btn-primary">Section C</button>
+      <button class="btn-primary">Section D</button>
+  </section>
+
+  <section id="wd" class="section"  style="background-image: url('https://th.bing.com/th/id/R.84ae60fcae6fd9f16c36e745676e6752?rik=0bBhy8CL%2bmxtZw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fGTrby6G.jpg&ehk=eqVeTLl4%2b%2f38QuCaxbE3LyI3M65fD7T5gtaz%2b4baVt8%3d&risl=&pid=ImgRaw&r=0');">
+    <div class="container">
+      <label class="lbl"><h3>GRADE 11</h3></label>
+      <h2 style="color: whitesmoke;">WEB DESIGN AND DEVELOPMENT</h2>
+      <button class="btn-primary">Section A</button>
+      <button class="btn-primary">Section B</button>
+      <button class="btn-primary">Section C</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Awolia School | Designed for Excellence</p>
+    </div>
+  </footer>
+</body>
+</html>
